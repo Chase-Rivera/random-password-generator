@@ -53,6 +53,16 @@ function AskQuestions() {
     console.log(putInto)
 
 
+
+    var passwordRequirements = {
+        useLowercase: useLowercase,
+        useUppercase: useUppercase,
+        useNumbers: useNumbers,
+        useSpecial: useSpecial,
+        length: passwordLength
+    }
+
+
 }
 
 
