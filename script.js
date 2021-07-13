@@ -15,6 +15,16 @@ var putInto = [];
 function AskQuestions() {
 
     var useLowercase = confirm("Would you like to use lowercase letters in your password?");
+    console.log(useLowercase);
+
+    var useUppercase = confirm("Would you like to use uppercase letters in your password?");
+    console.log(useUppercase);
+
+    var useNumbers = confirm("Would you like to use number in your password?");
+    console.log(useNumbers);
+
+    var useSpecial = confirm("Would you like to use special charaacters in your password?");
+    console.log(useSpecial)
 
 
 }
