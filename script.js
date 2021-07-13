@@ -34,6 +34,25 @@ function AskQuestions() {
     console.log(passwordLength);
 
 
+
+    if (useLowercase){
+        putInto.push(lowercase);
+    }
+
+    if (useUppercase){
+        putInto.push(uppercase);
+    }
+
+    if (useNumbers){
+        putInto.push(numbers);
+    }
+
+    if (useSpecial){
+        putInto.push(special);
+    }
+    console.log(putInto)
+
+
 }
 
 
