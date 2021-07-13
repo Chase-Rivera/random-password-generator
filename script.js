@@ -27,4 +27,23 @@ function AskQuestions() {
     console.log(useSpecial)
 
 
+    var passwordLength = prompt("You're password must be atlest 8 characters and no longer than 128 characters.")
+    while(passwordLength < 8 || passwordLength > 128){
+        passwordLength = prompt("You're password must be atlest 8 characters and no longer than 128 characters.")
+    }
+    console.log(passwordLength);
+
+
 }
+
+
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+  
+  }
+
+
+generateBtn.addEventListener("click", writePassword);
