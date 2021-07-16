@@ -62,8 +62,22 @@ function AskQuestions() {
         length: passwordLength
     }
 
+    return passwordRequirements;
+
 
 }
+
+
+
+function randomChoice(arr){
+    var characters = Math.floor(Math.random() * arr.length);
+    var selection = arr[characters];
+    return selection;
+}
+
+
+
+
 
 
 function writePassword() {
