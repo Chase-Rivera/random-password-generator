@@ -75,6 +75,38 @@ function randomChoice(arr){
     return selection;
 }
 
+function generatePassword(){
+    var options = AskQuestions();
+    var showResult = [];
+    var availCharacters = [];
+    var setCharacters = [];
+
+    if (options.useLowercase){
+        availCharacters = availCharacters.concat(lowercase);
+        setCharacters.push(randomChoice(lowercase))
+    }
+
+    if (options.useUppercase){
+        availCharacters = availCharacters.concat(uppercase);
+        setCharacters.push(randomChoice(uppercase))
+    }
+
+    if (options.useSpecial){
+        availCharacters = availCharacters.concat(special);
+        setCharacters.push(randomChoice(special))
+    }
+
+    for (i=0; i<options.length; i++){
+        var characters = randomChoice(availCharacters);
+        showResult.push(characters)
+    }
+
+    for (i=0; i<setCharacters.length; i++){
+        showResult[i] = setCharacters[i];
+    }
+
+    return showResult.join("");
+}
 
 
 
